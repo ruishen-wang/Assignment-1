@@ -6,8 +6,5 @@ public class Athletes {
   private String state;
   private int record;
   private int points;
-  
-  public complete (game){
-	  
-  }
+ //Comment Code!
 }
