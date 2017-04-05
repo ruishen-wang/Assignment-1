@@ -1,6 +1,6 @@
 package olyzapicgame;
 
-public class Result
+public class Running
 {
-	
+
 }

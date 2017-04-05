@@ -10,44 +10,33 @@ import com.sun.webkit.ThemeClient;
 
 public class Game
 {
-	
+
 	int n;
 	private String referee;
+	private String gameID;
+	
 	 
 	public Game(String IDOfGame, String referee)
 	{
-		String id=IDOfGame;
+		gameID=IDOfGame;
 		this.referee=referee;
 	}
 
-	public static void main(String[] args)
-	{
-		int running=1;
-		Scanner in = new Scanner(System.in);
-
-		try
-		{
-			while (running==1)
-			{
-
-				Menu.menu();
-				int numbOfMenu = in.nextInt();
-				GameManager test=new GameManager();
-				test.operationOfMenu(numbOfMenu);
-				
-				if (numbOfMenu > 6)
-				{
-					throw new Exception("Invaid operation");
-				}
-				
-			}
-			} 
-			catch (Exception e)
-			{
-				Menu.menu();
-
-			}	
-
+	public String getGameID(String gameID){
+		return gameID;
+	}
+	
+	public void setGameID(String gameID){
+		this.gameID=gameID;
+	}
+	
+	public String getReferee(String referee){
+		return referee;
+	
+	}
+	
+	public void setReferee(String referee){
+		this.referee=referee;
 	}
 }
 	
